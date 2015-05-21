@@ -55,7 +55,7 @@ function triangle_tracker_form_submit($form,&$form_state) {
     if(($first_length < ($second_length + $third_length)) && ($second_length < ($first_length + $third_length)) && ($third_length < ($second_length + $first_length))) {
         if ($first_length == $second_length || $first_length == $third_length || $third_length == $second_length)
         $output =  "Iscoscele triangle";
-        else if ($first_length == $second_length == $third_length) {
+        else if (($first_length == $second_length) &&($second_length == $third_length)) {
             $output = "Equilateral";
         }
         else {
