@@ -65,7 +65,7 @@ function triangle_tracker_form_submit($form,&$form_state) {
     else {
         $output = "Invalid entries try again";
     }
-    $_SESSION['type_triangle'] = $result;
+    $_SESSION['type_triangle'] = $output;
 
     $form_state['redirect'] = 'triangle_success';
 }
